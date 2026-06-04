@@ -11,6 +11,14 @@
    ============================================================ */
 
 
+@font-face {
+  font-family: "ABOUTFACE";
+  src: url("https://db.onlinewebfonts.com/t/4845f8dfcdb292168a007526b5c0dede.woff2") format("woff2"),
+       url("https://db.onlinewebfonts.com/t/4845f8dfcdb292168a007526b5c0dede.woff") format("woff"),
+       url("https://db.onlinewebfonts.com/t/4845f8dfcdb292168a007526b5c0dede.ttf") format("truetype");
+  font-display: swap;
+}
+
 /* ============================================================
    1. CSS VARIABLES
    ============================================================ */
@@ -27,7 +35,7 @@
   --red:         #2ea855;
 
   /* フォント */
-  --ff-display: "Pacifico", cursive;
+  --ff-display: "ABOUTFACE", "Pacifico", cursive;
   --ff-body:    "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 
   /* ヘッダー高さ (JSとCSSで共有) */
@@ -531,6 +539,25 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--ff-display); }
 .sec-dark {
   background-color: var(--black);
   padding: 40px var(--px);
+}
+
+#food {
+  background-color: #ab4e4e; /* 前後の緑・白と調和する、少し薄めで上品なテラコッタレッド */
+}
+
+#birthday {
+  background-color: #fafafa; /* 限りなく白に近い背景 */
+}
+
+#birthday .big-title {
+  background: linear-gradient(135deg, var(--gold-brown) 0%, #0f4621 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#birthday .menu-body {
+  color: var(--dark-gray);
 }
 
 @media (min-width: 768px) {
