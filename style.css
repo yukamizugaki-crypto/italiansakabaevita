@@ -542,8 +542,37 @@ h1, h2, h3, h4, h5, h6 { font-family: var(--ff-display); }
 }
 
 #food {
-  background-color: #ab4e4e; /* 前後の緑・白と調和する、少し薄めで上品なテラコッタレッド */
+  background-color: #df382c; /* トマトのような鮮やかで深みのある赤 */
 }
+
+#food .big-title {
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  -webkit-text-fill-color: var(--white);
+  color: var(--white);
+  text-shadow: 
+    -2px -2px 0 #9e1b12,  
+     2px -2px 0 #9e1b12,
+    -2px  2px 0 #9e1b12,
+     2px  2px 0 #9e1b12,
+     0px  0px 10px rgba(0, 0, 0, 0.4);
+}
+
+#food .menu-body {
+  color: var(--white);
+  text-shadow: 
+    -1px -1px 0 #9e1b12,  
+     1px -1px 0 #9e1b12,
+    -1px  1px 0 #9e1b12,
+     1px  1px 0 #9e1b12;
+}
+
+#food .menu-link-btn:hover {
+  background-color: #9e1b12;
+  color: var(--white);
+}
+
 
 #birthday {
   background-color: #fafafa; /* 限りなく白に近い背景 */
