@@ -13,7 +13,11 @@
 
 @font-face {
   font-family: "ABOUTFACE";
-  src: url("https://db.onlinewebfonts.com/t/4845f8dfcdb292168a007526b5c0dede.woff2") format("woff2"),
+  src: url("fonts/ABOUTFACE.woff2") format("woff2"),
+       url("fonts/ABOUTFACE.woff") format("woff"),
+       url("fonts/ABOUTFACE.otf") format("opentype"),
+       url("fonts/ABOUTFACE.ttf") format("truetype"),
+       url("https://db.onlinewebfonts.com/t/4845f8dfcdb292168a007526b5c0dede.woff2") format("woff2"),
        url("https://db.onlinewebfonts.com/t/4845f8dfcdb292168a007526b5c0dede.woff") format("woff"),
        url("https://db.onlinewebfonts.com/t/4845f8dfcdb292168a007526b5c0dede.ttf") format("truetype");
   font-display: swap;
@@ -35,8 +39,8 @@
   --red:         #2ea855;
 
   /* フォント */
-  --ff-display: "ABOUTFACE", "Pacifico", cursive;
-  --ff-body:    "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  --ff-display: "Fondamento", "ABOUTFACE", "Pacifico", cursive;
+  --ff-body:    "ABOUTFACE", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 
   /* ヘッダー高さ (JSとCSSで共有) */
   --header-h: 60px;
